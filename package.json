@@ -1,0 +1,12 @@
+{
+  "name": "cijfer-syncer",
+  "version": "1.0.0",
+  "description": "Spotify analytics scraper using Selenium.",
+  "main": "spotify-analytics-scraper.js",
+  "scripts": {
+    "start": "node spotify-analytics-scraper.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.22.0"
+  }
+} 

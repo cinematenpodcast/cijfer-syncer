@@ -1,5 +1,6 @@
 const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
+const fs = require('fs');
 
 async function spotifyAnalyticsScraper() {
   // Path to your user data directory
@@ -39,6 +40,17 @@ async function spotifyAnalyticsScraper() {
     // Click the "Update" button
     const updateButton = await driver.findElement(By.xpath("//button[contains(text(),'Update')]"));
     await updateButton.click();
+    
+    // Wait for the chart to reload
+    await driver.sleep(5000); 
+
+    // Take screenshot
+    const monthYear = firstDayPrevMonth.toLocaleString('default', { month: 'long' }).toLowerCase() + '-' + firstDayPrevMonth.getFullYear();
+    const screenshotPath = `wabliefteru-cijfers-${monthYear}.png`;
+    
+    let image = await driver.takeScreenshot();
+    fs.writeFileSync(screenshotPath, image, 'base64');
+    console.log(`Screenshot saved to ${screenshotPath}`);
 
   } finally {
     await driver.quit();

@@ -27,11 +27,11 @@
   - [x] 3.3 Construct the dynamic element IDs for the start and end dates.
   - [x] 3.4 Click the calculated start and end dates in the calendar view.
   - [x] 3.5 Locate and click the "Update" button to apply the new date range.
-- [ ] 4.0 Implement Screenshot and File Saving
-  - [ ] 4.1 Add a `driver.sleep()` or explicit wait for the chart data to reload.
-  - [ ] 4.2 Generate the output filename using the format `wabliefteru-cijfers-{maand}-{jaar}.png`.
-  - [ ] 4.3 Take a full-page screenshot and save it to the project root.
-  - [ ] 4.4 Log a success message with the path to the saved screenshot.
+- [x] 4.0 Implement Screenshot and File Saving
+  - [x] 4.1 Add a `driver.sleep()` or explicit wait for the chart data to reload.
+  - [x] 4.2 Generate the output filename using the format `wabliefteru-cijfers-{maand}-{jaar}.png`.
+  - [x] 4.3 Take a full-page screenshot and save it to the project root.
+  - [x] 4.4 Log a success message with the path to the saved screenshot.
 - [ ] 5.0 Finalize and Test the Script
   - [ ] 5.1 Add comments to explain key parts of the script.
   - [ ] 5.2 Manually perform the pre-authentication steps as described in the PRD.

@@ -1,0 +1,10 @@
+[33758:2110818:0721/145420.398724:ERROR:chrome/browser/process_singleton_posix.cc:358] The profile appears to be in use by another Google Chrome process (33576) on another computer (/Users/yorrickschoonheydt/Documents/Wabliefteru/cijfer-syncer/chrome-profile/Yoyos-Macbook.local). Chrome has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chrome.
+[33758:2110818:0721/145420.789032:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[33758:2111316:0721/145425.501286:ERROR:google_apis/gcm/engine/gcm_store_impl.cc:942] Failed to restore security token.
+[33758:2111319:0721/145425.871938:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[33758:2111319:0721/145425.872132:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[33758:2111319:0721/145425.872244:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[33758:2111319:0721/145425.902681:ERROR:google_apis/gcm/engine/mcs_client.cc:700]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[33758:2111319:0721/145425.902768:ERROR:google_apis/gcm/engine/mcs_client.cc:702] Failed to log in to GCM, resetting connection.
+[33758:2111314:0721/145450.887865:INFO:chrome/browser/extensions/extension_garbage_collector.cc:184] Garbage collection for extensions on file thread is complete.
+[33758:2111319:0721/145453.439934:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

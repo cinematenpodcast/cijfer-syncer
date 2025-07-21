@@ -14,19 +14,25 @@ This document describes the requirements for a locally executed script that auto
 ## 3. Pre-requisites (Manual Setup)
 
 Before running the script, the user must perform a one-time setup:
-1.  Launch a Chromium-based browser with a dedicated user data directory. Example command:
-    `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --user-data-dir="/tmp/spotify-session"`
-2.  Navigate to `https://creators.spotify.com/` and log in manually.
-3.  Ensure cookies are saved by closing and reopening the browser using the same command to verify the session is active.
-4.  This user data directory path must be provided to the script.
+1.  **Start a special instance of Chrome.** Open your terminal and run the appropriate command for your operating system. This will launch Chrome with a remote debugging port open, which is what allows our script to connect to it.
+
+    **On macOS:**
+    `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --remote-debugging-port=9222 --user-data-dir="$(pwd)/chrome-profile"`
+
+    **On Linux:**
+    `google-chrome --remote-debugging-port=9222 --user-data-dir="$(pwd)/chrome-profile"`
+
+2.  **Log in to Spotify.** In the Chrome window that just opened, navigate to `https://creators.spotify.com/` and log in.
+3.  **Leave the browser running.** Unlike before, you should now leave this Chrome window open. The script will connect to this existing session.
+4.  **Run the script.** In a *new* terminal window, run the script (`node spotify-analytics-scraper.js`). It will automate the browser you left open.
 
 ## 4. Functional Requirements
 
 1.  **Script Initialization:**
-    -   The script must be configured to use `Selenium` with a local `Chromium` browser.
-    -   It must be configured to use the pre-prepared user data directory to launch with the active session.
+    -   The script must be configured to use `Selenium` to connect to a running `Chromium` browser on `127.0.0.1:9222`.
 2.  **Browser Automation (`spotify-analytics-scraper.js`):**
-    -   The script must navigate directly to the analytics URL: `https://creators.spotify.com/pod/show/7163qoNT9QZ88uAKmIFk6C/analytics`.
+    -   The script must attach to the existing browser session.
+    -   It must navigate directly to the analytics URL: `https://creators.spotify.com/pod/show/7163qoNT9QZ88uAKmIFk6C/analytics`.
     -   It must click the date range dropdown menu (ID: `dropdown-toggle-spotify-stats-chart-date`).
     -   It must calculate the first and last day of the previous month.
     -   It must programmatically click the corresponding start and end dates in the calendar view.

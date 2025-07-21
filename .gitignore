@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Chrome Profile
+chrome-profile/
+chrome-profile-temp/
+
+# Error logs and screenshots
+error_screenshot.png
+*.log
+
+# Output
+*.png 

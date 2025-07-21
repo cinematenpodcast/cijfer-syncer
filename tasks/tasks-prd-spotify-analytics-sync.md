@@ -11,16 +11,16 @@
 
 ## Tasks
 
-- [ ] 1.0 Setup Project Dependencies
+- [x] 1.0 Setup Project Dependencies
   - [x] 1.1 Create `package.json` with project metadata (name, version, description).
   - [x] 1.2 Add `selenium-webdriver` to the dependencies in `package.json`.
   - [x] 1.3 Create the main script file: `spotify-analytics-scraper.js`.
 - [ ] 2.0 Implement Browser Automation Logic
-  - [ ] 2.1 Import `Builder`, `By`, and `until` from `selenium-webdriver`.
-  - [ ] 2.2 Configure Chrome options to use the persistent user data directory (`/tmp/spotify-session`).
-  - [ ] 2.3 Initialize the Chrome browser with the specified options.
-  - [ ] 2.4 Navigate to the Spotify for Creators analytics URL.
-  - [ ] 2.5 Use a `try...finally` block to ensure `driver.quit()` is always called.
+  - [x] 2.1 Import `Builder`, `By`, and `until` from `selenium-webdriver`.
+  - [x] 2.2 Configure Chrome options to use the persistent user data directory (`/tmp/spotify-session`).
+  - [x] 2.3 Initialize the Chrome browser with the specified options.
+  - [x] 2.4 Navigate to the Spotify for Creators analytics URL.
+  - [x] 2.5 Use a `try...finally` block to ensure `driver.quit()` is always called.
 - [ ] 3.0 Implement Date Calculation and Selection
   - [ ] 3.1 Locate and click the date range dropdown menu.
   - [ ] 3.2 Calculate the first and last day of the previous month using the `Date` object.

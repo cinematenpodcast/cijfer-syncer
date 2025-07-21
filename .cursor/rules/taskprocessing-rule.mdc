@@ -1,0 +1,11 @@
+---
+description: How to proceed to the next sub-task of the tasklist
+globs:
+alwaysApply: false
+---
+
+YOU DO NOT HAVE TO CHECK WITH THE USER TO CONTINUE ON TO THE NEXT SUB-TASK!
+
+Only ask to proceed when going on to a next main task (1, 2, 3, ...) not when trying to proceed to the next sub-task (1.1, 1.2, 1.3, ...)
+
+The only exception to the rule is when there needs to be some testing by the user.

@@ -15,18 +15,18 @@
   - [x] 1.1 Create `package.json` with project metadata (name, version, description).
   - [x] 1.2 Add `selenium-webdriver` to the dependencies in `package.json`.
   - [x] 1.3 Create the main script file: `spotify-analytics-scraper.js`.
-- [ ] 2.0 Implement Browser Automation Logic
+- [x] 2.0 Implement Browser Automation Logic
   - [x] 2.1 Import `Builder`, `By`, and `until` from `selenium-webdriver`.
   - [x] 2.2 Configure Chrome options to use the persistent user data directory (`/tmp/spotify-session`).
   - [x] 2.3 Initialize the Chrome browser with the specified options.
   - [x] 2.4 Navigate to the Spotify for Creators analytics URL.
   - [x] 2.5 Use a `try...finally` block to ensure `driver.quit()` is always called.
-- [ ] 3.0 Implement Date Calculation and Selection
-  - [ ] 3.1 Locate and click the date range dropdown menu.
-  - [ ] 3.2 Calculate the first and last day of the previous month using the `Date` object.
-  - [ ] 3.3 Construct the dynamic element IDs for the start and end dates.
-  - [ ] 3.4 Click the calculated start and end dates in the calendar view.
-  - [ ] 3.5 Locate and click the "Update" button to apply the new date range.
+- [x] 3.0 Implement Date Calculation and Selection
+  - [x] 3.1 Locate and click the date range dropdown menu.
+  - [x] 3.2 Calculate the first and last day of the previous month using the `Date` object.
+  - [x] 3.3 Construct the dynamic element IDs for the start and end dates.
+  - [x] 3.4 Click the calculated start and end dates in the calendar view.
+  - [x] 3.5 Locate and click the "Update" button to apply the new date range.
 - [ ] 4.0 Implement Screenshot and File Saving
   - [ ] 4.1 Add a `driver.sleep()` or explicit wait for the chart data to reload.
   - [ ] 4.2 Generate the output filename using the format `wabliefteru-cijfers-{maand}-{jaar}.png`.
